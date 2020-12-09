@@ -1,9 +1,10 @@
 # Web Scraping Homework - Mission to Mars
 
-![](Images/mars1.jph)
+
 
 In this assignment, built a web application that scrapes various websites for data related to the Mission to Mars and displays the information in a single HTML page. 
 
+![](Images/mars1.jpg)
 
 ## Step 1 - Scraping
 
@@ -158,8 +159,11 @@ for result in results:
 Used MongoDB with Flask templating to created a new HTML page that displays all of the information that was scraped from the URLs above.
 
 Codebase for scrape function is [here](scrape_mars.py)
+
 Codebase of app is [here](app.py)
+
 Codebase of Index is [here](/templates/index3.html)
+
 Codebase of style is [here](/template/style.css)
 
 - - -
