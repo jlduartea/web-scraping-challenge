@@ -1,6 +1,6 @@
 # Web Scraping Homework - Mission to Mars
 
-![](Images/mars1.PNG)
+![](Images/mars1.jph)
 
 In this assignment, built a web application that scrapes various websites for data related to the Mission to Mars and displays the information in a single HTML page. 
 
