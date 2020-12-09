@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mission to Moon JLDA</title>
+</head>
+<body>
+    <html>
+  <head>
+    <title>codebrainery</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:700,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+  </head>
+  <body>
+    <header class="container">
+      <div class="row">
+        <h1 class="col-sm-8">Mission to Moon</h1>
+        <nav class="col-sm-4">
+          <p>By Jose Luis Duarte</p>
+        </nav>
+      </div>
+    </header>
+    <section class="jumbotron">
+      <div class="container">
+        <div class="row text-center">
+          <h3>Web Scraping Challenge</h3>
+        </div>
+        <div class="row text-center">
+            <a class="btn btn-primary btn-lg" href="/scrape" role="button">Scrape New Data</a>
+           
+      </div>
+    </section>
+    <section class="container">
+      <div class="row">
+        
+        <div class="card-body col-sm-6">
+            <h3 class="card-title" id="font">Latest Mars News:</h3>
+            <h4 class="card-subtitle mb-2 " id="font">{{ mars.news_title }}</h4>
+            <p class="card-text">{{ mars.summary }}</p>
+            <a href={{ mars.news_url }} target="_blank">Check All News</a>
+        </div>
+        <div class="card-body col-sm-6">
+            <h3 class="card-title" id="font">Mars Facts</h3>
+            <p class="card-text" id="dark-font">{{ mars.fact_table | safe }}</p>
+        </div>
+
+      </div>
+      <div class="row">
+            <div class="card-body col-sm-12" id="img-table">
+                <h3 class="card-title text-center">Featured Mars Image</h3>
+                <p class="card-text text-center" id="dark-font">{{ mars.featured_image_title }}</p>
+                <div style ="text-align: center">
+                    <a href={{ mars.jpl_url }} >Check All Images</a>
+                    <img class="card-img-bottom" src="{{ mars.featured_image }}" alt="Featured Mars Image">
+                </div>
+            </div>
+        </div>
+        
+    
+    </section>
+    <div class ="row" id="mars-hemispheres">
+        <div class = "col-md-12">
+            <h2><center>Mars Hemispheres</center></h2>
+            {% for hemisphere in mars.hemisphere_image_urls %}
+                <div class = "col-md-6">
+                    <div class = "thumbnail">
+                        <img src = "{{hemisphere.image_url}}">
+                            <h3>{{hemisphere.title}}</h3>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>    
+    </div>
+
+
+    </div>
+    <footer class="container">
+      <div class="row">
+        <p class="col-sm-4">Copyright Jose Luis Duarte</p>
+        <ul class="col-sm-8 text-right">
+          
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
+</body>
+</html>
