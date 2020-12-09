@@ -158,13 +158,13 @@ for result in results:
 
 Used MongoDB with Flask templating to created a new HTML page that displays all of the information that was scraped from the URLs above.
 
-Codebase for scrape function is [here](scrape_mars.py)
+Codebase for `scrape function` is [here](scrape_mars.py)
 
-Codebase of app is [here](app.py)
+Codebase of `app` is [here](app.py)
 
-Codebase of Index is [here](/templates/index3.html)
+Codebase of `Index` is [here](/templates/index3.html)
 
-Codebase of style is [here](/template/style.css)
+Codebase of `style` is [here](/templates/style.css)
 
 - - -
 
